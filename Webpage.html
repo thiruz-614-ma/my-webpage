@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLC INDIA Limited - AI Conveyor Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <!-- Logo -->
+         <img src="nlc.png" alt="NLC Logo" class="logo">
+        <h1>NLC INDIA Limited</h1><br>
+        <nav>
+            <button onclick="scrollToSection('features')">Features</button>
+            <button onclick="scrollToSection('dashboard')">Dashboard</button>
+            <button onclick="scrollToSection('nlc-history')">NLC History</button>
+            <button onclick="scrollToSection('power-projects')">Power Projects</button>
+            <button onclick="scrollToSection('Mining-projects')">Mining Projects</button>
+            <button onclick="scrollToSection('references')">References</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+            
+        
+        <!-- Language Selector -->
+         <select id="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+        </select>
+        
+        <!-- Login Button -->
+         <button onclick="openLogin()">Login</button>
+        </nav>
+    </header>
+</body>
+    
+    <!-- Video Background -->
+     <div class="Video-container">
+        <video autoplay loop muted>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+     </div>
+
+<!-- Login Popup Modal -->
+ <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<body>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 id="hero-title">AI-Powered Conveyor Belt Load Detection</h2>
+        <p id="hero-description">Our AI-powered system revolutionizes conveyor belt monitoring, enhancing efficiency and safety in industrial operations.</p>
+        <div class="buttons">
+            <button class="btn-light">Get Started</button>
+            <button class="btn-dark">Learn More</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+    <!-- Sections for Scrolling -->
+     <section id="features" class="features-section">
+        <h2 class="Features-title">Key Features </h2><br>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="icon">⚙</i>
+                <h3>Deep Learning Model</h3>
+                <p>CNN-based classification to determine if the frame contains coal or soil.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="icon">📊</i>
+                <h3>Real-Time Monitoring</h3>
+                <p>Continuous monitoring and analysis of conveyor belt operations for optimal performance.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="icon">🔔</i>
+                <h3>Intelligent Alerts</h3>
+                <p>Instant notifications for abnormal conditions to prevent downtime and ensure safety.</p>
+            </div>
+                    
+            <div class="feature-card">
+                <i class="icon">⚡</i>
+                <h3>Smart Automation</h3>
+                <p>Automated speed control and shutdown features for energy efficiency and load management.</p>
+            </div>
+        </div>
+     </section><br>
+     
+     <div class="header">
+        <section id="dashboard" class="dashboard-section">
+            <h2 class="dashboard-title"> Dashboard </h2>
+    </div>
+        <div class="dashboard-container">
+
+            <!-- Overview -->
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Power Capacity</h3>
+                    <p>6655 MW</p>
+                </div>
+                <div class="card">
+                    <h3>Thermal Power</h3>
+                    <p>4240 MW</p>
+                </div>
+                <div class="card">
+                    <h3>Solar Power</h3>
+                    <p>1404 MW</p>
+                </div>
+                <div class="card">
+                    <h3>Wind Power</h3>
+                    <p>51 MW</p>
+                </div>
+            </div>
+
+            <!-- Real-time Data Section -->
+             <div class="real-time">
+                <h2>Real-time Power Generation</h2>
+                <p>Live data from PLC will be displayed here.</p>
+                <p id="realTimeData">Fetching data...</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="header">
+        <section id="nlc-history">
+            <h2>NLC-History</h2>
+    </div>
+    <p>
+        Lignite deposit was found by chance when some 'brown substance' gushed out with water in 
+        <a href="https://en.wikipedia.org/wiki/T._M._Jambulingam_Mudaliar" target="_blank">T. M. Jambulingam Mudaliar's</a> 620 acre own farm artesian well during 1934. 
+        He acted swiftly and contacted the then <a href="https://en.wikipedia.org/wiki/British_Raj" target="_blank">British Raj</a>, which sent geologists to Neyveli. 
+        It was later identified as 'Lignite'. He generously extended a substantial portion of the sprawling land-bank for soil exploration. 
+        Through his effort and donated his 620 acres land to the <a href="https://en.wikipedia.org/wiki/Madras" target="_blank">Madras Government</a>.    
+    </p>    
+    
+    <p>
+        NLC has been a forerunner in the country in the energy sector for 62 years, contributing a lion's share in lignite 
+        production and significant share in thermal power generation. It was inaugurated by the first Prime Minister 
+        <a href="https://en.wikipedia.org/wiki/Jawaharlal_Nehru" target="_blank">Jawaharlal Nehru</a> in 1956.
+    </p>
+
+    <p>
+        NLC operates four opencast lignite mines of a total capacity of 30.6 million tonnes per annum (MTPA) at Neyveli and Barsingsar; 
+        six lignite based pithead thermal power stations with an aggregate capacity of 3640 MW - at Neyveli and Barsingsar; 
+        and a 1000 MW coal based thermal power station at Thoothukudi, Tamil Nadu through its subsidiary, 
+        <strong>NLC Tamil Nadu Power Limited (NTPL)</strong>, a joint venture between NLC and TANGEDCO 
+        (equity participation in the ratio of 89:11). NLC recently commissioned a 1x500 MW unit at Neyveli 
+        which is also Asia's largest lignite fired boiler.
+    </p>
+
+    <p>
+        NLC has also forayed into the renewable energy sector with the commissioning of a 141 MW Solar Photo Voltaic Power Plant 
+        including a 1 MW rooftop project at Neyveli and a 51 MW wind energy plant at Kazhuneerkulam village of Tirunelveli district in Tamil Nadu. 
+        The company is also setting up 1209 MW Solar Power Projects at Tirunelveli, Virudhunagar, and Ramanathapuram districts of Tamil Nadu, 
+        of which, 300 MW have been commissioned. NLC is aiming to achieve a total renewable energy capacity of 4251 MW.
+    </p>
+
+    <p>
+        NLCL has a target of becoming a 20,000+ MW company by 2025. Works are under progress for the lignite-based Neyveli New Thermal Power Plant 
+        (1000 MW), Bithnok TPS and Barsingsar TPS Expansion (each 250 MW). Further, NLC, jointly with the 
+        <a href="https://en.wikipedia.org/wiki/Uttar_Pradesh_Rajya_Vidyut_Utpadan_Nigam" target="_blank">Uttar Pradesh Rajya Vidyut Utpadan Nigam Limited (UPRVUNL)</a>, is setting up a 3x660 MW coal based thermal power plant 
+        at <a href="https://en.wikipedia.org/wiki/Ghatampur" target="_blank">Ghatampur</a> in Uttar Pradesh, through its subsidiary company 
+        <strong>Neyveli Uttar Pradesh Power Limited (NUPPL)</strong> (equity participation in the ratio of 51:49). 
+        Apart from the above, the addition of thermal capacity to the tune of 6040 MW by way of installation of new plants 
+        and acquisition of power assets to the tune of 3000 MW is in the pipeline.
+    </p>
+
+    <p>
+        NLC has also contributed significantly to the socio-economic development for more than half a century.
+    </p>
+
+    <p>The business portfolio of the company is as under:</p>
+</section>
+
+    <div class="header">
+        <section id="power-projects">
+            <h2>Power Projects</h2>
+    </div>
+    <p>NLC India has five pithead thermal power stations with an aggregate capacity of 4240 MW. Further, NLC India has so far installed 51 wind turbine generators of capacity 1.50 MW each and also commissioned a 140 MW solar photovoltaic power plant in Neyveli, resulting in an overall power generating capacity of 4431 MW (excl. JVs).</p>
+
+    <table>
+        <tr>
+            <th>Power Plant</th>
+            <th>Capacity (MW)</th>            
+        </tr>
+        <tr>
+            <td>TPS - I</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>TPS - II</td>
+            <td>1470</td>
+        </tr>
+        <tr>
+            <td>TPS - I Expansion</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>Barsingar TPS</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>TPS - II Expansion</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Solar Power Plant</td>
+            <td>1404</td>
+        </tr>
+        <tr>
+            <td>Wind Power Plant</td>
+            <td>51</td>
+        </tr>
+        <tr>
+            <td>NTPL</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>6655</td>
+        </tr>
+    </table>
+    
+        <h3>Thermal Power Station I</h3>
+        <p>The 600 MW Neyveli Thermal Power Station-I in which the first unit was synchronized in May 1962 and the last unit in September 1970 consists of six units of 50 MW each and three units of 100 MW each. Power generated from Thermal Power Station-I after meeting NLC's requirements is supplied to TANGEDCO, Tamil Nadu which is the sole beneficiary. Due to the aging of the equipment / high-pressure parts, the life extension programme has been approved by the Indian Government in March 1992 and was completed in March 1999 thus extending the life by 15 years. Given the high grid demand in this region, this power station is being operated after conducting the Residual Life Assessment (RLA) study. The Indian Government sanctioned a 2x500 MW Power Project (Neyveli New Thermal Power Plant – NNTPS) in June 2011 as a replacement for the existing TPS-I.</p><br>
+    
+        <h3>Thermal Power Station II</h3>
+        <P>The 1470 MW second thermal power station consists of 7 units of 210 MW each. In February 1978, the Government of India sanctioned the second thermal power station of 630 MW capacity (3 X 210 MW) and in February 1983, the Government of India sanctioned the second thermal power station Expansion from 630 MW to 1470 MW with the addition of 4 units of 210 MW each. The first 210 MW unit was synchronized in March 1986 and the last unit (Unit-VII) was synchronized in June 1993. The power generated from the second thermal power station after meeting the needs of the second mine is shared by the Southern states viz., Tamil Nadu, Kerala, Karnataka, Andhra Pradesh and Union Territory of Puducherry.</p><br>
+
+        <h3>Thermal Power Station I - Expansion</h3>
+        <p>Thermal Power Station-I has been expanded (2 x 210 MW) using the lignite available from Mine-I expansion. The scheme, TPS I Expansion, was sanctioned by the Government of India in February 1996. Unit-I was synchronized in October 2002 and Unit-II in July 2003. The power generated from this station, after meeting the internal requirements, is shared by the Southern States viz., Tamil Nadu, Kerala, Karnataka, and Union Territory of Puducherry.</p><br>
+    
+        <h3>Barsingar Thermal Power Station</h3>
+        <p>The Government of India sanctioned the Barsingsar Thermal Power Station 250 MW (2 X 125 MW) in October 2004. The units were commissioned in December 2011 and in January 2012. The power generated from this station after meeting internal requirements is shared by the DISCOMS of the state of Rajasthan.</p><br>
+    
+        <h3>Thermal Power Station - II Expansion</h3>
+        <p>This project consists of two units of 250 MW capacity each. Unit-II attained commercial operation in April 2015 and Unit-I in July 2015. The lignite requirement is met through expansion of Mine-II. The steam generators of this project employ eco-friendly circulating fluidised bed combustion (CFBC) technology. This technology has been adopted for 250 MW capacity units for the first time in India.</p><br>
+    
+        <div class>
+            <img src="Thermal Power Station.png">
+        </div>
+    </section><br>
+    
+    <div class="header">
+        <section id="Mining-projects">
+            <h2>Mining Projects</h2>
+    </div>
+        <p>NLC India has five pithead thermal power stations with an aggregate capacity of 4240 MW. Further, NLC India has so far installed 51 wind turbine generators of capacity 1.50 MW each and also commissioned a 140 MW solar photo voltaic power plant in Neyveli, resulting in an overall power generating capacity of 4431 MW (excl. JVs).</p>
+
+        <p><b>Mining Capacity</p></b>
+        <table>
+            <tr>
+                <th>Mines</th>
+                <th>Capacity (in MTPA)</th>
+            </tr>
+            <tr>
+                <td>Mine I</td>
+                <td>10.5</td>
+            </tr>
+            <tr>
+                <td>Mine IA</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>Mine II</td>
+                <td>15.0</td>
+            </tr>
+            <tr>
+                <td>Barsingsar Mine</td>
+                <td>2.1</td>
+            </tr>
+        </table>
+        <div class="gallery">
+            <div>
+                <img src="Mining Projects.png">
+            </div>
+        </div>
+    </section>
+    
+    <div class="header">
+        <section id="references">
+            <h2>References</h2>
+    </div>
+    <ol>
+        <li>
+            <a href="https://www.moneycontrol.com/" target="_blank">
+                NLC India Consolidated Profit & Loss account, NLC India Financial Statement & Accounts
+            </a>. <i>moneycontrol.com</i>. Retrieved 3 August 2020.
+        </li>
+        <li>
+            <a href="https://www.moneycontrol.com/" target="_blank">
+                NLC India Consolidated Balance Sheet, NLC India Financial Statement & Accounts
+            </a>. <i>moneycontrol.com</i>. Retrieved 3 August 2020.
+        </li>
+        <li>
+            <a href="https://trendlyne.com/" target="_blank">
+                Latest Shareholding Pattern - NLC India Ltd
+            </a>. <i>trendlyne.com</i>. Retrieved 7 August 2020.
+        </li>
+        <li>
+            <a href="https://www.nlcindia.in/" target="_blank">
+                NLC India Limited
+            </a>, Archived from the 
+            <a href="https://web.archive.org/web/20200604" target="_blank">
+                original
+            </a> on 4 June 2020. Retrieved 11 February 2017.
+        </li>
+        <li>
+            neyveliwebs.com (2015), 
+            <a href="http://www.neyveliwebs.com" target="_blank">
+                History of Neyveli
+            </a>, Neyveli: Neyveliwebs.
+        </li>
+        <li>
+            NLC India Limited
+            <a href="https://web.archive.org/web/20180303" target="_blank">
+                History
+            </a>, Neyveli: Neyveli city, archived from the 
+            <a href="https://web.archive.org/web/20180303" target="_blank">
+                original
+            </a> on 3 March 2018, retrieved 1 May 2020.
+        </li>
+    </ol>
+</section>
+    
+    <div class="header">
+    <section id="contact">
+        <h2>Contact Us</h2>
+    </div>
+    
+    <div class="container">
+    <!-- Chairman and Managing Director -->
+     <div class="card">
+        <h3>Chairman and Managing Director</h3>
+        <p>👤 Shri M.PRASANNA KUMAR</p>
+        <p>📧 <a href="mailto:cmd@nlcindia.in">cmd@nlcindia.in</a></p>
+        <p>📞 04142-252280</p>
+    </div>
+
+    <!-- Director (Mines, Planning & Projects) -->
+    <div class="card">
+        <h3>Director (Mines), Director (Planning & Projects) (Addl charge)</h3>
+        <p>👤 Dr. SURESH CHANDRA SUMAN</p>
+        <p>📧 <a href="mailto:director.mines@nlcindia.in">director.mines@nlcindia.in</a></p>
+        <p>📧 <a href="mailto:dpp.co@nlcindia.in">dpp.co@nlcindia.in</a></p>
+        <p>📞 04142-252270</p>
+    </div>
+
+    <!-- Director (Finance) -->
+    <div class="card">
+        <h3>Director (Finance)</h3>
+        <p>👤 Dr. PRASANNA KUMAR ACHARYA</p>
+        <p>📧 <a href="mailto:dir@nlcindia.in">dir@nlcindia.in</a></p>
+        <p>📞 04142-252240</p>
+    </div>
+
+    <!-- Director (Human Resource) -->
+    <div class="card">
+        <h3>Director (Human Resource)</h3>
+        <p>👤 Shri SAMIR SWARUP</p>
+        <p>📧 <a href="mailto:dir.hr@nlcindia.in">dir.hr@nlcindia.in</a></p>
+        <p>📞 04142-252220</p>
+    </div>
+
+    <!-- Director (Power) -->
+    <div class="card">
+        <h3>Director (Power)</h3>
+        <p>👤 Shri M VENKATACHALAM</p>
+        <p>📧 <a href="mailto:dir.power@nlcindia.in">dir.power@nlcindia.in</a></p>
+        <p>📞 04142-252570</p>
+    </div>
+
+    <!-- Chief Vigilance Officer -->
+    <div class="card">
+        <h3>Chief Vigilance Officer</h3>
+        <p>👤 THIRU APPAKANNU GOVINDARAJAN</p>
+        <p>📧 <a href="mailto:cvo.nlc@nlcindia.in">cvo.nlc@nlcindia.in</a></p>
+        <p>📞 04142-219351</p>
+    </div>
+
+    <!-- Executive Director (CRM) -->
+    <div class="card">
+        <h3>Executive Director (CRM)</h3>
+        <p>👤 Shri K. PRABHU KISHORE</p>
+        <p>📧 <a href="mailto:crmchennai@nlcindia.in">crmchennai@nlcindia.in</a></p>
+        <p>📞 044-28384617</p>
+    </div>
+
+    <!-- Company Secretary -->
+    <div class="card">
+        <h3>Company Secretary</h3>
+        <p>👤 Shri Prashant Vinay Kaushik</p>
+        <p>📧 <a href="mailto:cosec@nlcindia.in">cosec@nlcindia.in</a></p>
+        <p>📞 044-28369139</p>
+    </div>
+
+    <!-- Central Public Information Officer -->
+    <div class="card">
+        <h3>Central Public Information Officer</h3>
+        <p>👤 Shri S.Senguttuvan</p>
+        <p>📧 <a href="mailto:cpio@nlcindia.in">cpio@nlcindia.in</a></p>
+        <p>📞 04142-217785</p>
+    </div>
+
+    <!-- Registered Office -->
+    <div class="card">
+        <h3>Registered Office</h3>
+        <p>No-135, EVR Periyar High Road, Kilpauk, Chennai-600 010</p>
+        <p>📞 044-28360027, 28369111</p>
+        <p>📠 044-28360057</p>
+    </div>
+
+    <!-- Corporate Office -->
+    <div class="card">
+        <h3>Corporate Office</h3>
+        <p>Block - 1, Neyveli - 607 801</p>
+        <p>📍 Cuddalore District, Tamilnadu.</p>
+    </div>
+</div>
+</section>
+
+<div class="footer">
+    <p>© 2025 NLC India Limited. All Rights Reserved.</p>
+</div>
+</body>
+</html>
